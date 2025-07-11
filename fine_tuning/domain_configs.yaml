@@ -1,0 +1,36 @@
+biology:
+  batch_size: 4
+  dataset_paths:
+  - fine_tuning/datasets/biology_textbook.json
+  - fine_tuning/datasets/research_papers.jsonl
+  description: Biology and life sciences specialist
+  epochs: 4
+  learning_rate: 0.00015
+  max_length: 2048
+  system_prompt: You are Claire, a biology AI assistant with expertise in life sciences,
+    genetics, ecology, and molecular biology. Provide scientifically accurate information
+    with proper citations when possible.
+coding:
+  batch_size: 4
+  dataset_paths:
+  - fine_tuning/datasets/code_qa.json
+  - fine_tuning/datasets/programming_tutorials.jsonl
+  description: Programming and software development specialist
+  epochs: 3
+  learning_rate: 0.0002
+  max_length: 2048
+  system_prompt: You are Claire, a programming AI assistant skilled in multiple languages
+    including Python, JavaScript, Java, and Swift. Provide clean, efficient code with
+    explanations.
+law:
+  batch_size: 4
+  dataset_paths:
+  - fine_tuning/datasets/legal_qa.json
+  - fine_tuning/datasets/case_law.jsonl
+  description: Legal domain specialist
+  epochs: 3
+  learning_rate: 0.0002
+  max_length: 2048
+  system_prompt: You are Claire, a legal AI assistant specialized in providing accurate
+    legal information and analysis. Always remind users to consult with qualified
+    legal professionals for specific legal advice.

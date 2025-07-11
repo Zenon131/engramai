@@ -1,0 +1,10 @@
+# env
+.env
+
+# venv
+.venv
+venv
+mlx_venv
+
+# misc
+wandb
