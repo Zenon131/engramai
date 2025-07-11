@@ -152,7 +152,7 @@ class ClaireFinetuner:
     def __init__(self, 
                  base_model: str = "meta-llama/Llama-3.2-1B",
                  output_dir: str = "./claire_models",
-                 hf_token: Optional[str] = "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",
+                 hf_token: Optional[str] = os.getenv("HF_TOKEN"),
                  wandb_project: Optional[str] = None,
                  use_4bit: bool = True):
         
